@@ -56,7 +56,6 @@ namespace sel_1_task1
                         driver.FindElement(By.CssSelector("td#content h1"));
                     }
                 }
-                // else { driver.Url = "https://www.google.nl/"; }
             }
         }
 
