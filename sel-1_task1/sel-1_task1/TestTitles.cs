@@ -18,8 +18,8 @@ namespace sel_1_task1
         [SetUp]
         public void start()
         {
-            driver = new InternetExplorerDriver();
-            //driver = new ChromeDriver();
+            //driver = new InternetExplorerDriver();
+            driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
         }
@@ -45,7 +45,6 @@ namespace sel_1_task1
                 if (AreElementsPresent(By.CssSelector("li#app- li")))
                 {
                     //считаем кол-во элементов в подменю
-                    var element = driver.FindElements(By.CssSelector("li#app- li"));
                     var countSubMenu = driver.FindElements(By.CssSelector("li#app- li")).Count;
                     //пройтись ко каждому элементу подменю
                     for (int i = 0; i < countSubMenu; i++)
