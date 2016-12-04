@@ -45,7 +45,7 @@ namespace sel_1_task1
                 i = i + 1;
             }
             Array.Sort(arraySorted);
-            array.SequenceEqual(arraySorted);
+           // array.SequenceEqual(arraySorted);
             Assert.IsTrue(array.SequenceEqual(arraySorted));
         }
 
@@ -80,7 +80,6 @@ namespace sel_1_task1
                         z = z + 1;
                     }
                     Array.Sort(arrayZSorted);
-                    arrayZ.SequenceEqual(arrayZSorted);
                     Assert.IsTrue(arrayZ.SequenceEqual(arrayZSorted));
                     //выход на страницу всех стран
                     driver.FindElement(By.LinkText("Countries")).Click();
@@ -119,7 +118,6 @@ namespace sel_1_task1
                     count = count + 1;
                 }
                 Array.Sort(arraySorted);
-                array.SequenceEqual(arraySorted);
                 Assert.IsTrue(array.SequenceEqual(arraySorted));
                 // выход на страницу Geo Zones
                 driver.FindElement(By.LinkText("Geo Zones")).Click();
